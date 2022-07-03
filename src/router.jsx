@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import About from './pages/about';
 import MovieDetailsPage from './pages/movieDetailsPage';
 import ActorDetailsPage from './pages/actorDetailsPage';
+import SearchResults from './pages/searchResults';
 
 const Router = () => {
     return (
@@ -14,6 +15,7 @@ const Router = () => {
                <Route path="/about" element={<About />} />
                <Route path="/movie/:id" element={<MovieDetailsPage />} />
                <Route path="/actor/:id" element={<ActorDetailsPage />} />
+               <Route path="/search/:query" element={<SearchResults />} />
            </Routes>
        </Template>
     );

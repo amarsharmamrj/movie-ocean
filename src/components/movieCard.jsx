@@ -50,7 +50,7 @@ const MovieCard = (props) => {
                     fontSize: {xs: '0.7rem', sm: '0.2rem', md: '1rem'}
                     }} 
                     >
-               {moment(props.movie.release_date ?? props.movie.first_air_date).format("DD/MM/yyyy")}
+               {moment(props.movie.release_date ?? props.movie.first_air_date).format("ll")}
             </Typography>
  
             </Box>

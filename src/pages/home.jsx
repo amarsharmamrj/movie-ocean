@@ -1,12 +1,16 @@
 import { Grid } from '@mui/material';
 import React from 'react';
 import Popular from '../components/popular/popular';
+import Search from '../components/search';
 import WeeklyTrending from '../components/trending/weeklyTrending';
 
 const Home = () => {
     return (
         <>
-            <Grid container sx={{marginTop: '80px'}}>
+            <Grid container sx={{marginTop: '4rem'}}>
+                <Search />
+            </Grid>
+            <Grid container sx={{marginTop: {xs: '2rem', sm: '2rem', sm: '3rem'}}}>
                 <Popular type="movie" />
             </Grid>
             <Grid container sx={{marginTop: {xs: '2rem', sm: '2rem', sm: '3rem'}}}>

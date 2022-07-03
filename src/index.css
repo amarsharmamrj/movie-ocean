@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: black;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,222 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} 
+.color-white{
+  color: white;
+}
+
+/* CUSTOME SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(5, 129, 211, 0.76); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(6, 123, 201); 
+}
+
+.MuiDialogContent-root {
+  padding:0px !important;
+  text-align: center;
+}
+
+
+/* ###################### MOVIE HIGHLIGHTS ######################## */
+.high-container {
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.high-image {
+  width: 70% !important;
+}
+
+.high-title {
+  font-size: 2.5rem !important;
+  padding: 0px !important;
+  margin-top: 2rem !important;
+}
+
+.high-release {
+  padding: 0 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.high-language {
+  padding: 0 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.high-tagline {
+  padding: 0 !important;
+  color: #ddd7d7 !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 1rem !important;
+  font-style: italic;
+}
+
+.high-overview {
+  padding: 0 !important;
+  font-size: 1rem !important;
+  margin-bottom: 1rem !important;
+} 
+
+.moviesContainerStyle{
+  display: flex;
+  width: 99vw;
+  overflow-x: scroll;
+  padding: 1rem 2rem;
+}
+
+/* ###################### END OF MOVIE HIGHLIGHTS ######################## */
+
+/* ############### PLAY BUTTON ###################*/
+* {
+  box-sizing: border-box;
+}
+.container {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  outline: none;
+  background: rgba(5, 129, 211, 0.637);
+  border: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn:hover{
+  background: rgb(5, 129, 211);
+  transition: all 0.2s ease-in;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: #1f3a93;
+  transform: scale(0);
+  transform-origin: 83% 86%;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.btn.active::before {
+  transition-timing-function: ease;
+  transform: scale(1);
+}
+
+.btn .play {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  margin-left: 15px;
+  z-index: 100;
+  clip-path: polygon(0 0, 80% 48%, 0 100%, 0% 100%);
+  transition: clip-path 0.5s ease;
+  transition-delay: 0.4s;
+}
+
+.btn:hover .play{
+  transition: all 0.2s ease-in;
+  width: 55px;
+  height: 55px;
+}
+/* ############### END OF PLAY BUTTON ###################*/
+
+/* ############### ACTOR DETAILS ###################*/
+.actor-info-heading {
+  font-size: 1.2rem !important;
+  padding-left: 0 !important;
+  padding-top: 1rem !important;
+}
+
+.actor-info-value {
+  color: #dbdbdb !important;
+  font-size: 1.1rem !important;
+  padding-left: 0 !important;
+}
+.actor-more-name{
+  font-size: 2.5rem !important;
+  margin: 3rem 0 2rem 0 !important;
+}
+
+.actor-more-heading{
+  font-size: 1.5rem !important;
+  margin-bottom: 0.8rem !important;
+}
+.actor-more-desc{
+  color: #e2e3e3 !important;
+  font-size: 1.2rem !important;
+  text-align: justify !important;
+}
+/* ############### END OF ACTOR DETAILS ###################*/
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                                        MEDIA QUERIES
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+@media screen and (max-width: 576px){
+  .moviesContainerStyle{
+    display: flex;
+    width: 99vw;
+    overflow-x: scroll;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .actor-more-name{
+    padding: 0px !important;
+    margin: 2rem 0 !important;
+  }
+  
+  .actor-more-heading{
+    padding: 0px !important;
+  }
+  .actor-more-desc{
+    padding: 0px !important;
+  }
+
+  .min-padding {
+    padding-left: 0.8rem !important
+  }
+
+  .high-container {
+    color: white;
+    padding: 1rem 0.8rem;
+  }
 }

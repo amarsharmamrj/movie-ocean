@@ -13,13 +13,13 @@ const Search = () => {
     }
 
     const handleSearch = (e) => {
-        history(`/search/${query}`)
+        history(`/search?query=${query}`)
     }
     
     const handleMouseDown= (e) => {
         console.log("keydonwn:", e.keyCode)
         if(e.keyCode === 13){
-            history(`/search/${query}`)
+            history(`/search?query=${query}`)
         }
     }
   

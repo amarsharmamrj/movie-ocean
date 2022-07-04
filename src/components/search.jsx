@@ -35,6 +35,7 @@ const Search = () => {
                           color="secondary"
                           fullWidth={true}
                           onKeyDown={handleMouseDown}
+                          placeholder="Search movies, series, tv.."
                         //   value={values.password}
                           onChange={handleOnChange}
                           endAdornment={

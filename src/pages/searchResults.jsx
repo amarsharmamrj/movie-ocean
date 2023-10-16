@@ -12,7 +12,7 @@ const SearchResults = () => {
     const params = useParams();
     const history = useNavigate()
     const [searchParams, setSearchParams] = useSearchParams();
-    const pageValue = searchParams.get("page");
+    const pageValue = searchParams.get("page") || 1;
     const query = searchParams.get("query");
     console.log("pageValue", pageValue)
     console.log("query", query)

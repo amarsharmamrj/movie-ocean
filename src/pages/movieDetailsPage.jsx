@@ -11,7 +11,7 @@ import CastCardSkeleton from '../skeletons/castCardSkeleton';
 import RecommendCardSkeleton from '../skeletons/recommendCardSkeleton';
 import SimilarCardSkeleton from '../skeletons/similarCardSkeleton';
 import VideoCardSkeleton from '../skeletons/videoCardSkeleton';
-import MoviehighlightsSkeleton from '../skeletons/movieHighlightsSkeleton';
+import MoviehighlightsSkeleton from '../skeletons/movieHighlightsSkeleton'; 
 
 const MovieDetailsPage = () => {
     const params = useParams();

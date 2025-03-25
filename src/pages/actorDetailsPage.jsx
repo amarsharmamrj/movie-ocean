@@ -12,7 +12,7 @@ import ActorProfileImagesSkeleton from '../skeletons/actorProfileImagesSkeleton'
 const ActorDetailsPage = () => {
     const params = useParams();
     const [actor, setActor] = useState({});
-    const [dataLoaded, setDataLoaded] = useState(false);
+    const [dataLoaded, setDataLoaded] = useState(false); 
 
     useEffect(() => {
         setDataLoaded(false);

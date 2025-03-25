@@ -5,7 +5,7 @@ import axios from 'axios';
 import SearchedItem from '../components/searchedItem';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 import SearchedItemSkeleton from '../skeletons/searchedItemSkeleton';
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos'; 
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const SearchResults = () => { 

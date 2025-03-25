@@ -8,7 +8,7 @@ import WeeklyTrending from '../components/trending/weeklyTrending';
 const Home = () => {
     return (
         <>
-            <Grid container sx={{marginTop: '4rem'}}>
+            <Grid container sx={{marginTop: '4rem'}}> 
                 <Search />
             </Grid>
 

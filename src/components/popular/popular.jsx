@@ -7,7 +7,7 @@ import MovieCardSkeleton from '../../skeletons/movieCardSkeleton';
 
 const Popular = (props) => {
     const [movielist, setMovieList] = useState([]);
-    const demoArray = [12,3,4,5,6,7,8,9,10]
+    const demoArray = [12,3,4,5,6,7,8,9,10] 
     useEffect(() => {
         axios.get(`${process.env.REACT_APP_API_ROOT_PATH}/${props.type}/popular?api_key=${process.env.REACT_APP_API_KEY}&append_to_response=videos,images`)
         .then((result) => {

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../../index.css';
 import MovieCard from '../movieCard';
-import MovieCardSkeleton from '../../skeletons/movieCardSkeleton';
+import MovieCardSkeleton from '../../skeletons/movieCardSkeleton'; 
 
 const Popular = (props) => {
     const [movielist, setMovieList] = useState([]);

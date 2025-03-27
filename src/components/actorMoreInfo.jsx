@@ -12,7 +12,7 @@ import ActorProfileImages from './actorProfileImages';
 
 const ActorMoreInfo = (props) => {
     const params = useParams();
-    const { actor } = props;
+    const { actor } = props;  
     
     const mainContainer = {
         padding: '1rem 2rem',

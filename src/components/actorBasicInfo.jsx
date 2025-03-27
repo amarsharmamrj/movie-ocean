@@ -16,7 +16,7 @@ const ActorBasicInfo = (props) => {
         border: '2px solid rgba(5, 129, 211, 0.76) !important',
         textDecoration: 'none',
         marginBottom: '1rem !important',
-        fonSize: '1rem !important'
+        fonSize: '1rem !important'  
     }
 
     const back = {

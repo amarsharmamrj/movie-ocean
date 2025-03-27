@@ -6,7 +6,7 @@ import VideoPlayDialog from './videoPlayDialog';
 const ActorProfileCard = (props) => {
    
     const imageStyle = {
-        borderRadius: '5px'
+        borderRadius: '5px' 
     }
     return (
         <>

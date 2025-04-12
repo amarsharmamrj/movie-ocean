@@ -5,7 +5,7 @@ import '../index.css';
 import moment from 'moment'
 import { Box, Button, Grid, Typography } from '@mui/material';
 import Casts from './casts';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 const ActorBasicInfo = (props) => { 

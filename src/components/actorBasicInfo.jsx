@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
 const ActorBasicInfo = (props) => { 
-    const { actor } = props; 
+    const { actor } = props;  
       
     const backHome = { 
         color: 'white !important',

@@ -11,7 +11,7 @@ import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 const ActorBasicInfo = (props) => { 
     const { actor } = props;
       
-    const backHome = {
+    const backHome = { 
         color: 'white !important',
         border: '2px solid rgba(5, 129, 211, 0.76) !important',
         textDecoration: 'none',

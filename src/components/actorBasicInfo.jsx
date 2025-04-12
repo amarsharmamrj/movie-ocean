@@ -21,7 +21,7 @@ const ActorBasicInfo = (props) => {
 
     const back = {
         color: 'white !important',
-        border: '2px solid rgba(5, 129, 211, 0.76) !important',
+        border: '2px solid rgba(5, 129, 211, 0.76) !important', 
         textDecoration: 'none',
         marginBottom: '1rem !important',
         marginLeft: '1rem !important',
